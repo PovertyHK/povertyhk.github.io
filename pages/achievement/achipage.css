@@ -40,6 +40,10 @@
     -webkit-transform: rotate(45deg);
 }
 
+.achiBlockTitle {
+    text-align: left;
+}
+
 .achiDropdown {
     float: right;
 }
