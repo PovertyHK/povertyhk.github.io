@@ -24,7 +24,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    color: white;
     cursor: pointer;
 }
 
@@ -35,14 +34,14 @@
     padding-right: 10px;
     width: auto;
     height: auto;
+    border: 1px solid black;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 .achiTitle, .achiSummary {
     text-align: center;
-}
-
-.achiTitle, .achiDef {
-    color: white;
 }
 
 .achiSummary {
