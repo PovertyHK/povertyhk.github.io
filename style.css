@@ -22,6 +22,7 @@ a {
 
 a {
 	text-decoration: none;
+  cursor: pointer !important;
 }
 
 li:after {
