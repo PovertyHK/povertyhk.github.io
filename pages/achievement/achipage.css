@@ -13,3 +13,13 @@
     font-weight: bold;
 }
 
+.achi-intro p {
+    text-align: center;
+    font-style: italic;
+}
+
+.achievements {
+    display: grid;
+    justify-content: center;
+    grid-auto-columns: auto;
+}
