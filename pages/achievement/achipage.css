@@ -18,32 +18,28 @@
     font-style: italic;
 }
 
-.achievements {
+.achievement {
     width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    cursor: pointer;
 }
 
-.achi {
-    display: block;
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: auto;
-    height: auto;
-    border: 1px solid black;
-    -moz-box-shadow: 3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow: 3px 3px 5px 6px #ccc;
+.rightArrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
 
-.achiTitle, .achiSummary {
-    text-align: center;
+.downArrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
-.achiSummary {
-    font-style: italic;
+.achiDropdown {
+    float: right;
 }
