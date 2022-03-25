@@ -1,0 +1,256 @@
+.backgroundImage {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('media/povImgs/povHands.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 943px;
+  background-attachment: fixed;
+}
+
+.indexHeader {
+  background-color: transparent;
+  border: transparent;
+  color: white;
+}
+
+.indexLogo a{
+  color: white;
+}
+
+.indexNav a{
+  color: white;
+}
+
+.indexNav li.current:after {
+  width:100%;
+  background: white;
+}
+
+.indexNav li:hover:after {
+  width: 100%;
+  background: white;
+}
+
+.home-text {
+  color: #ffffff;
+  font-family: 'Nunito';
+  position: center;
+  font-size: 45px;
+  letter-spacing: 0;
+  line-height: 60px;
+  font-weight: 100;
+  margin-bottom: 50px;
+  animation-delay: 1.5s;
+  animation: fade-in 2s forwards;
+  padding-top: 17.5%;
+  width: 76%;
+  margin: 0 auto;
+}
+
+.btn-about {
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 2px solid #FFFFFF;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-left: 13%;
+  padding: 20px 50px;
+}
+
+.btn-about:hover {
+  background-color: #FFFFFF;
+  color: #34495e;
+  border: 2px solid #FFFFFF;
+}
+
+.home-column1 img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  float: left;
+}
+
+.home-column1.right {
+  padding-left: 7%;
+  padding-right: 20%;
+  padding-top: 3%;
+  float: left;
+}
+
+.subheading {
+  color: #ce2027;
+  font-family: 'Nunito';
+  font-size: 16px;
+}
+
+@media (max-width: 755px) {
+  .home-column1 img {
+    width: 100%;
+  }
+  
+  .home-column1.right {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+  }
+}
+
+/* Email Subscribe section */
+.home-column2 form {
+  border: 4px solid #f1f1f1;
+}
+
+.home-column2 .container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.home-column2 input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+}
+
+/* Homepage About section */
+.home-about-column{
+  padding: 128px 16px;
+  display: block;
+  background-color: #e6e6e6;
+}
+
+.home-about-container, 
+.home-about-panel, 
+.home-about-row, 
+.home-about-cell-row, 
+.home-about-clear, 
+.home-about-bar {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.home-about-center {
+  text-align: center!important;
+}
+
+.home-about-center h3 {
+  font-family: 'Nunito';
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 24px;
+  box-sizing: inherit;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  box-sizing: inherit;
+  display: block;
+  line-height: 1.8;
+}
+
+.home-about-large {
+  font-size: 18px!important;
+}
+
+.home-about-center p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  box-sizing: inherit;
+  font-family: 'Nunito';
+  line-height: 1.8;
+}
+
+.home-about-row {
+  padding: 0 8px;
+  box-sizing: inherit;
+  display: block;
+  content: "";
+  display: table;
+  clear: both;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.home-about-quarter {
+  padding: 0 8px;
+  float: left;
+  width: 24.99999%;
+  box-sizing: inherit;
+  display: block;
+}
+
+.fa {
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+}
+
+.home-about-margin-bottom {
+  margin-bottom: 16px!important;
+}
+
+.home-about-jumbo {
+  font-size: 64px!important;
+}
+
+.fa-desktop {
+  content: "\f108";
+}
+
+/* Animations */
+.fadeHeader {
+  animation: fadein 0.5s;
+}
+
+.headerFadeWhite {
+  animation: fadeWhite 0.5s;
+}
+
+.headerFadeTransparent {
+  animation: fadeTransparent 0.5s;
+}
+
+/* Keyframes */
+@keyframes fadein {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+@keyframes fadeout {
+  from {opacity:1;}
+  to {opacity:0;}
+}
+
+@keyframes fadeWhite {
+  from {
+    background-color: transparent;
+    border: transparent;
+  }
+  to {
+    background-color: white;
+    border: 1px solid #a2a2a2;
+  }
+}
+
+@keyframes fadeTransparent {
+  from {
+    background-color: white;
+    border: 1px solid #a2a2a2;
+  }
+  to {
+    background-color: transparent;
+    border: transparent;
+  }
+}

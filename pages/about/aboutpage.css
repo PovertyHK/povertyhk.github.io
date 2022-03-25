@@ -1,0 +1,125 @@
+.backgroundImage {
+  background-image: url(https://cdn.glitch.global/d49dc322-34ef-4a3c-a8a5-af7a5d17f490/image.jpeg?v=1644289820402);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 550px;
+  background-attachment: fixed;
+}
+
+.about-column1 img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  float: left;
+}
+
+.about-column1.right {
+  padding-left: 7%;
+  padding-right: 20%;
+  padding-top: 3%;
+  float: left;
+}
+
+.about-column2 img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  float: right;
+}
+
+.about-column2.left {
+  padding-left: 7%;
+  padding-right: 20%;
+  padding-top: 3%;
+  float: left;
+}
+
+.subheading {
+  color: #ce2027;
+  font-family: 'Nunito';
+  font-size: 16px;
+}
+
+@media (max-width: 755px) {
+  .about-column1 img {
+    width: 100%;
+  }
+  
+  .about-column1.right {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+  }
+  .about-column2 img {
+    width: 100%;
+  }
+  
+  .about-column2.right {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+  }
+}
+
+/* TEAM SECTION */
+.about-team {
+  background-color: #e6e6e6;
+}
+
+.about-team h3 {
+  color: #34495e !important;
+}
+
+.about-column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .about-column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.about-title {
+  margin-top: 0px;
+  position: center;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.about-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about-container {
+  padding: 0 16px;
+}
+
+.about-container::after, .about-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.about-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.about-button:hover {
+  background-color: #555555;
+}
