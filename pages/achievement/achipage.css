@@ -18,32 +18,143 @@
     font-style: italic;
 }
 
-.achievements {
-    width: 80%;
+.achievement {
+    width: 95%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    cursor: pointer;
 }
 
-.achi {
-    display: block;
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+.achiWrap {
+    margin: 40px auto;
     width: auto;
-    height: auto;
-    border: 1px solid black;
-    -moz-box-shadow: 3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow: 3px 3px 5px 6px #ccc;
-}
-
-.achiTitle, .achiSummary {
+    display: block;
     text-align: center;
+    transition: 0.15s ease;
 }
 
-.achiSummary {
-    font-style: italic;
+.achiWrap.active .arrow {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.achiWrap.active .arrow:before {
+    transform: translate(10px, 0);
+}
+
+.achiWrap.active .arrow:after {
+    transform: rotate(90deg) translate(10px, 0);
+}
+
+.achiWrap.active ul {
+    opacity: 0.3;
+    height: 108px;
+}
+
+.achiWrap3 .arrow {
+    transform: rotate(0);
+    left: 0;
+}
+
+.achiWrap3 .arrow:before, .achiWrap3 .arrow:after {
+    background-color: transparent;
+    width: 3px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    border-bottom: 12px solid black;
+    top: 0;
+    left: 0;
+    transform: rotate(0);
+}
+
+.achiWrap3 .arrow:before {
+    transform: rotate(-135deg);
+}
+
+.achiWrap3 .arrow:after {
+    transform: rotate(135deg);
+}
+
+.achiWrap3.active .arrow {
+    transform: rotate(0);
+    transform: translate(0, -6px);
+}
+
+.achiWrap3.active .arrow:before {
+    transform: rotate(-45deg);
+}
+
+.achiWrap3.active .arrow:after {
+    transform: rotate(45deg);
+}
+
+.arrow {
+    width: 13px;
+    height: 13px;
+    position: relative;
+    bottom: -5px;
+    left: -10px;
+    transition: 0.4s ease;
+    margin-top: 2px;
+    text-align: left;
+    transform: rotate(45deg);
+    float: right;
+}
+
+.arrow:before, .arrow:after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 3px;
+    background-color: black;
+    transition: 0.4s ease;
+}
+
+.arrow:after {
+    position: absolute;
+    transform: rotate(90deg);
+    top: -5px;
+    left: 5px;
+}
+
+.click-text {
+    display: block;
+    text-align: left;
+    padding: 0 12px 16px;
+    margin: 0;
+    cursor: pointer;
+    color: black;
+    border-bottom: 1px solid black;
+    transition: 0.15s ease;
+}
+
+.click-text:hover {
+    color: black;
+    border-bottom-color: gray;
+}
+
+.achievement ul {
+    padding: 0;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.4s ease;
+    border-bottom: 1px solid lightgray;
+}
+
+.achievement li {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 4px 12px;
+    text-align: left;
+    cursor: pointer;
+    width: auto;
+}
+
+.achievement li:first-child {
+    margin-top: 12px;
+}
+
+.achievement li:last-child {
+    margin-bottom: 12px;
 }
