@@ -1,8 +1,8 @@
-document.getElementById('achiWrap3').onclick = function() {
+function dropdown(item) {
 
-    var className = ' ' + this.className + ' ';
+    var className = ' ' + item.className + ' ';
 
-    this.className = ~className.indexOf(' active ') ?
+    item.className = ~className.indexOf(' active ') ?
                          className.replace(' active ', ' ') :
-                         this.className + ' active';
+                         item.className + ' active';
 }
