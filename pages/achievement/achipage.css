@@ -164,3 +164,11 @@
 .achievement li:last-child {
     margin-bottom: 12px;
 }
+
+.achievement li.achiLink {
+    color: blue;
+}
+
+.achievement li.achiLink:hover {
+    color: cornflowerblue;
+}
