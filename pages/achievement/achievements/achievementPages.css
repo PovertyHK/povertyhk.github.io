@@ -1,0 +1,22 @@
+.achi-title {
+    text-align: center;
+}
+
+.achi-summary {
+    font-style: italic;
+}
+
+.achi-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.achiSecTitle {
+    padding: 0px;
+}
+
+.achiSection {
+    padding: 0px;
+    width: 98%;
+    margin: 0 auto;
+}
