@@ -1,0 +1,1 @@
+document.getElementById('achiBlock').style.height = (document.getElementById('achiHeader').clientHeight + document.getElementById('progressBar').clientHeight).toString() + 'px';
