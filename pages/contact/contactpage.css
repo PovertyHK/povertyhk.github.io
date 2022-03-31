@@ -1,0 +1,10 @@
+.contactMain {
+    background-image: url('/media/otherImgs/coolImgThingy.jpeg');
+    display: inline-block;
+}
+
+.contactContent {
+    width: 80%;
+    display: inline-block;
+    background-color: white;
+}
