@@ -20,3 +20,10 @@
     width: 98%;
     margin: 0 auto;
 }
+
+.achiImage {
+    background-image: url('/media/otherImgs/hard-work.jpeg');
+    width: 100%;
+    height: 500px;
+    border-radius: 3px;
+}
