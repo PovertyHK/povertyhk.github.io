@@ -1,11 +1,15 @@
 .contactMain {
     background-image: url('/media/otherImgs/coolImgThingy.jpeg');
     display: inline-block;
-    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
 }
 
 .contactContent {
-    padding: 10%;
+    margin: auto;
+    padding: 10px;
     position: relative;
     width: 80%;
     display: inline-block;
@@ -14,11 +18,43 @@
     justify-content: center;
 }
 
+.contText {
+    margin: 1px;
+    font-family: 'Nunito';
+}
+
 .contField {
     width: 100%;
+}
+
+.contHalf {
+    width: 49.5%;
+}
+
+.contLeft {
+    float: left;
+}
+
+.contRight {
+    float: right;
 }
 
 .message {
     resize: vertical;
     overflow: auto;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+:-moz-placeholder {
+    font-style: italic;  
+}
+
+::-moz-placeholder {
+    font-style: italic;  
+}
+:-ms-input-placeholder {  
+    font-style: italic; 
 }
