@@ -21,3 +21,39 @@
   padding-top: 3%;
   float: left;
 }
+
+.issue-col2 img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  float: right;
+}
+
+.issue-col2.left {
+  padding-left: 7%;
+  padding-right: 20%;
+  padding-top: 3%;
+  float: left;
+}
+
+@media (max-width: 755px) {
+  .issue-col1 img {
+    width: 100%;
+  }
+  
+  .issue-col1.right {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+  }
+
+  .issue-col2 img {
+    width: 100%;
+  }
+  
+  .issue-col2.left {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+  }
+}
