@@ -1,25 +1,38 @@
-window.onscroll = function() {
-  var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-  var navHeader = document.getElementById('indexHeader');
-  var navBar = document.getElementById('indexNav');
-  var navLogo = document.getElementById('indexLogo');
-  let scroll = 1;
-  if (scrollTop >= scroll) {
+setScreen();
+
+window.onscroll = setScreen();
+
+function setScreen () {
+  if (window.screen.width >= 769) {
+    var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+    var navHeader = document.getElementById('indexHeader');
+    var navBar = document.getElementById('indexNav');
+    var navLogo = document.getElementById('indexLogo');
+    let scroll = 1;
+    if (scrollTop >= scroll) {
+      navBar.classList.remove("indexNav");
+      navHeader.classList.remove("indexHeader");
+      navLogo.classList.remove("indexLogo");
+      navHeader.classList.remove('headerFadeTransparent');
+    } else {
+      navBar.classList.add("indexNav");
+      navHeader.classList.add("indexHeader");
+      navLogo.classList.add("indexLogo");
+      navHeader.classList.remove('headerFadeWhite');
+    }
+
+    if (scrollTop >= scroll && !(navHeader.classList.contains('headerFadeWhite'))) {
+      headerFadeW();
+    } else if (scrollTop < scroll && !(navHeader.classList.contains('headerFadeTransparent'))) {
+      headerFadeT();
+    }
+
+    console.log('tru')
+  } else {
     navBar.classList.remove("indexNav");
     navHeader.classList.remove("indexHeader");
     navLogo.classList.remove("indexLogo");
     navHeader.classList.remove('headerFadeTransparent');
-  } else {
-    navBar.classList.add("indexNav");
-    navHeader.classList.add("indexHeader");
-    navLogo.classList.add("indexLogo");
-    navHeader.classList.remove('headerFadeWhite');
-  }
-
-  if (scrollTop >= scroll && !(navHeader.classList.contains('headerFadeWhite'))) {
-    headerFadeW();
-  } else if (scrollTop < scroll && !(navHeader.classList.contains('headerFadeTransparent'))) {
-    headerFadeT();
   }
 
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;

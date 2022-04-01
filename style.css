@@ -80,11 +80,12 @@ li.current:after {
 	.main-nav {
 		display: flex;
 	}
+
 	.header {
 		flex-direction: column;
 		align-items: center;
   }
-
+  
   #cookieConsent {
     display: none;
   }
