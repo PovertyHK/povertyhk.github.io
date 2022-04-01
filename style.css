@@ -242,6 +242,10 @@ li.current:after {
   transition: all 0.3s ease-in-out;
 }
 
+.socialLogo:hover {
+  opacity: 50%;
+}
+
 .footer-links {
   font-family: 'Nunito' !important;
 }
