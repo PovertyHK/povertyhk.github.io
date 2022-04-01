@@ -1,13 +1,14 @@
 setScreen();
 
-window.onscroll = setScreen();
+window.addEventListener("scroll", setScreen);
+window.addEventListener("resize", setScreen);
 
 function setScreen () {
-  if (window.screen.width >= 769) {
+  var navHeader = document.getElementById('indexHeader');
+  var navBar = document.getElementById('indexNav');
+  var navLogo = document.getElementById('indexLogo');
+  if (document.documentElement.clientWidth > 769) {
     var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-    var navHeader = document.getElementById('indexHeader');
-    var navBar = document.getElementById('indexNav');
-    var navLogo = document.getElementById('indexLogo');
     let scroll = 1;
     if (scrollTop >= scroll) {
       navBar.classList.remove("indexNav");
@@ -26,13 +27,10 @@ function setScreen () {
     } else if (scrollTop < scroll && !(navHeader.classList.contains('headerFadeTransparent'))) {
       headerFadeT();
     }
-
-    console.log('tru')
   } else {
     navBar.classList.remove("indexNav");
     navHeader.classList.remove("indexHeader");
     navLogo.classList.remove("indexLogo");
-    navHeader.classList.remove('headerFadeTransparent');
   }
 
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
