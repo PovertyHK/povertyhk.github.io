@@ -23,7 +23,7 @@
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="contHeader">
       <h1 class="logo"><a href="/index.html">Website</a></h1>
       <ul class="main-nav">
         <li><a href="../about/about.html">About</a></li>
@@ -32,15 +32,23 @@
         <li class="current"><a href="../contact/contact.html">Contact Us</a></li>
       </ul>
     </header>
-    <div class="progress-container">
+    <div class="progress-container" id="progressBar">
       <div class="progress-bar" id="myBar"></div>
     </div> 
     
     <hr class="block-content" />
 
+    <hr id="contBlock" style="visibility: hidden; margin: 0px;"/>
+
     <div class="contactMain">
       <div class="contactContent">
         <h1>Contact Us</h1>
+        <form class="contactForm" id="form">
+          <input type="text" minlength="100" placeholder="First Name" class="contHalf contLeft" required>
+          <input type="text" minlength="100" placeholder="Last Name" class="contHalf contRight" required>
+          <input type="text" minlength="1500" placeholder="Your Message" class="contField" required>
+          <input type="submit" placeholder="Submit" class="contSubmit">
+        </form>
       </div>
     </div>
 
@@ -128,5 +136,6 @@
     </script>
 
     <script src="/script.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>
