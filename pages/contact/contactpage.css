@@ -28,6 +28,10 @@
     justify-content: center;
 }
 
+.contactSection {
+    padding: 15px;
+}
+
 .contText {
     margin: 1px;
     font-family: 'Nunito';
