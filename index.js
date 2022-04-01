@@ -7,7 +7,7 @@ function setScreen () {
   var navHeader = document.getElementById('indexHeader');
   var navBar = document.getElementById('indexNav');
   var navLogo = document.getElementById('indexLogo');
-  if (document.documentElement.clientWidth > 769) {
+  if (document.documentElement.clientWidth > 1025) {
     var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
     let scroll = 1;
     if (scrollTop >= scroll) {
