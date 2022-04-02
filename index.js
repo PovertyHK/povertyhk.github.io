@@ -4,7 +4,7 @@ window.addEventListener("scroll", setScreen);
 window.addEventListener("resize", setScreen);
 
 function setScreen () {
-  var navHeader = document.getElementById('indexHeader');
+  var navHeader = document.getElementById('header');
   var navBar = document.getElementById('indexNav');
   var navLogo = document.getElementById('indexLogo');
   var blocker = document.getElementById('contentBlock');
@@ -43,7 +43,7 @@ function setScreen () {
 }
   
 function headerFadeT() {
-    var navHeader = document.getElementById('indexHeader');
+    var navHeader = document.getElementById('header');
     if (navHeader.classList.contains('headerFadeTransparent')) {
         var navItm = navHeader.cloneNode(true);
         navHeader.parentNode.replaceChild(navItm,navHeader);
@@ -53,7 +53,7 @@ function headerFadeT() {
 }
 
 function headerFadeW() {
-    var navHeader = document.getElementById('indexHeader');
+    var navHeader = document.getElementById('header');
     if (navHeader.classList.contains('headerFadeWhite')) {
         var navItm = navHeader.cloneNode(true);
         navHeader.parentNode.replaceChild(navItm,navHeader);

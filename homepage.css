@@ -97,12 +97,6 @@
   float: left;
 }
 
-.subheading {
-  color: #ce2027;
-  font-family: 'Nunito';
-  font-size: 16px;
-}
-
 @media (max-width: 755px) {
   .home-column1 img {
     width: 100%;

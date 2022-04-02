@@ -1,5 +1,12 @@
 window.onscroll = function() {setScroll()};
 
+changeSize();
+window.addEventListener('resize', changeSize);
+
+function changeSize () {
+    document.getElementById('contentBlock').style.height = document.getElementById('header').clientHeight + 'px';
+}
+
 checkCookiesEnabled();
 
 var cookies;

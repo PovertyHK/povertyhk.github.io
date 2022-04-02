@@ -102,6 +102,12 @@ li.current:after {
   }
 }
 
+.subheading {
+  color: #ce2027;
+  font-family: 'Nunito';
+  font-size: 16px;
+}
+
 /* Progress Bar */
 .progress-container {
   width: 100%;
