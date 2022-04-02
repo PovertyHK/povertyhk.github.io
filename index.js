@@ -7,7 +7,9 @@ function setScreen () {
   var navHeader = document.getElementById('header');
   var navBar = document.getElementById('indexNav');
   var navLogo = document.getElementById('indexLogo');
+  var blocker = document.getElementById('contentBlock');
   if (document.documentElement.clientWidth > 1025) {
+    blocker.style.display = 'none';
     var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
     let scroll = 1;
     if (scrollTop >= scroll) {
@@ -28,6 +30,7 @@ function setScreen () {
       headerFadeT();
     }
   } else {
+    blocker.style.display = 'block';
     navBar.classList.remove("indexNav");
     navHeader.classList.remove("indexHeader");
     navLogo.classList.remove("indexLogo");
