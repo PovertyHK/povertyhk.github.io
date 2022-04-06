@@ -89,3 +89,9 @@
 :-ms-input-placeholder {  
     font-style: italic; 
 }
+
+@media (max-width: 620px) {
+    .contHalf {
+        width: 100% !important;
+    }
+}
