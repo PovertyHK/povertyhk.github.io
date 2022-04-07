@@ -1,5 +1,3 @@
-setScreen();
-
 window.addEventListener("scroll", setScreen);
 window.addEventListener("resize", setScreen);
 
