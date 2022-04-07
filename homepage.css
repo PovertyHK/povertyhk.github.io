@@ -126,6 +126,14 @@
   background-color: #e6e6e6;
 }
 
+.home-button {
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -ms-animation: fadein 3s; 
+  -o-animation: fadein 3s; 
+  animation: fadein 3s;
+}
+
 .home-about-container, 
 .home-about-panel, 
 .home-about-row, 
@@ -216,6 +224,14 @@
   content: "\f108";
 }
 
+.home-about {
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s; 
+  -o-animation: fadein 2s; 
+  animation: fadein 2s;
+}
+
 /* Animations */
 .fadeHeader {
   animation: fadein 0.5s;
@@ -233,6 +249,21 @@
 @keyframes fadein {
   from {opacity:0;}
   to {opacity:1;}
+}
+
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 @keyframes fadeout {
