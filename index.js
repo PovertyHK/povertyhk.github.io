@@ -1,3 +1,10 @@
+if (document.documentElement.clientWidth <= 1025) {
+  document.getElementById('header').classList.remove("indexHeader");
+  document.getElementById('indexNav').classList.remove("indexNav");
+  document.getElementById('indexLogo').classList.remove("indexLogo");
+  document.getElementById('contentBlock').style.display = 'block';
+}
+
 window.addEventListener("scroll", setScreen);
 window.addEventListener("resize", setScreen);
 
