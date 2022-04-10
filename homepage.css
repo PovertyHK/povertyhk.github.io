@@ -31,6 +31,10 @@
   background: white;
 }
 
+.header {
+  z-index: 2;
+}
+
 .home-text {
   color: #ffffff;
   font-family: 'Nunito';
@@ -230,6 +234,7 @@
   -ms-animation: fadein 2s; 
   -o-animation: fadein 2s; 
   animation: fadein 2s;
+  z-index: 1;
 }
 
 /* Animations */
