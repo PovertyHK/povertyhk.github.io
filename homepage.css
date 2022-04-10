@@ -7,6 +7,10 @@
   background-attachment: fixed;
 }
 
+.progress-container {
+  z-index: 2;
+}
+
 .indexHeader {
   background-color: transparent;
   border: transparent;
