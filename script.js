@@ -37,14 +37,7 @@ function cookiesDisabled(){
 }
 
 function copyEmail(email) {
-  navigator.clipboard
-    .writeText(email)
-    .then(() => {
-      alert("Copied Email to clipboard");
-    })
-    .catch(() => {
-      alert("Something went wrong, please try again!");
-    });
+  window.open(`mailto:${email}`);
 }
 
 function setCookie(cname, cvalue) {
