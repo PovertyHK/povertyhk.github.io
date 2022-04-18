@@ -1,5 +1,5 @@
 .backgroundImage {
-  background-image: linear-gradient(black, black),url('/media/povImgs/povHKcardboardPushed.webp');
+  background-image: linear-gradient(black, black),url('/media/povImgs/povHKcardboardPushed.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: saturation;
