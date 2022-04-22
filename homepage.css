@@ -15,6 +15,9 @@
   background-color: transparent;
   border: transparent;
   color: white;
+  transition: background-color 0.5s,
+    border 0.5s,
+    color 0.5s;
 }
 
 .indexLogo a{
@@ -27,18 +30,21 @@
 
 .indexNav li.current:after {
   width:100%;
-  background: white;
+  background-color: white;
 }
 
 .indexNav li:hover::after,
 .indexNav li:focus::after,
 .indexNav li:focus-within::after {
   width: 100%;
-  background: white;
+  background-color: white;
 }
 
 .header {
   z-index: 2;
+  transition: background-color 0.5s,
+    border 0.5s,
+    color 0.5s;
 }
 
 .home-text {
@@ -244,19 +250,6 @@
   z-index: 1;
 }
 
-/* Animations */
-.fadeHeader {
-  animation: fadein 0.5s;
-}
-
-.headerFadeWhite {
-  animation: fadeWhite 0.5s;
-}
-
-.headerFadeTransparent {
-  animation: fadeTransparent 0.5s;
-}
-
 /* Keyframes */
 @keyframes fadein {
   from {opacity:0;}
@@ -281,26 +274,4 @@
 @keyframes fadeout {
   from {opacity:1;}
   to {opacity:0;}
-}
-
-@keyframes fadeWhite {
-  from {
-    background-color: transparent;
-    border: transparent;
-  }
-  to {
-    background-color: white;
-    border: 1px solid #a2a2a2;
-  }
-}
-
-@keyframes fadeTransparent {
-  from {
-    background-color: white;
-    border: 1px solid #a2a2a2;
-  }
-  to {
-    background-color: transparent;
-    border: transparent;
-  }
 }

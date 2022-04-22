@@ -21,18 +21,10 @@ function setScreen () {
       navBar.classList.remove("indexNav");
       navHeader.classList.remove("indexHeader");
       navLogo.classList.remove("indexLogo");
-      navHeader.classList.remove('headerFadeTransparent');
     } else {
       navBar.classList.add("indexNav");
       navHeader.classList.add("indexHeader");
       navLogo.classList.add("indexLogo");
-      navHeader.classList.remove('headerFadeWhite');
-    }
-
-    if (scrollTop >= scroll && !(navHeader.classList.contains('headerFadeWhite'))) {
-      headerFadeW();
-    } else if (scrollTop < scroll && !(navHeader.classList.contains('headerFadeTransparent'))) {
-      headerFadeT();
     }
   } else {
     blocker.style.display = 'block';
@@ -45,24 +37,4 @@ function setScreen () {
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
-}
-  
-function headerFadeT() {
-    var navHeader = document.getElementById('header');
-    if (navHeader.classList.contains('headerFadeTransparent')) {
-        var navItm = navHeader.cloneNode(true);
-        navHeader.parentNode.replaceChild(navItm,navHeader);
-    } else {
-        navHeader.classList.add('headerFadeTransparent')
-    }
-}
-
-function headerFadeW() {
-    var navHeader = document.getElementById('header');
-    if (navHeader.classList.contains('headerFadeWhite')) {
-        var navItm = navHeader.cloneNode(true);
-        navHeader.parentNode.replaceChild(navItm,navHeader);
-    } else {
-        navHeader.classList.add('headerFadeWhite')
-    }
 }
