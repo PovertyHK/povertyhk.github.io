@@ -201,6 +201,11 @@ li.current:after {
   color: white !important;
 }
 
+.footer-logo a:hover,
+.footer-logo a:focus {
+  opacity: 70%;
+}
+
 .social-links {
   flex-basis: 50%;
   display: flex;
