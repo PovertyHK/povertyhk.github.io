@@ -1,10 +1,10 @@
 function dropdown(item) {
 
-    var className = ' ' + item.className + ' ';
+    var className = item.className;
     var links = item.getElementsByClassName('achiLink')[0];
 
-    if (~className.indexOf(' active ')) {
-        item.className = className.replace(' active ', ' ');
+    if (~className.indexOf(' active')) {
+        item.className = className.replace(' active', '');
         links.tabIndex = -1;
     } else {
         item.className = className + ' active';

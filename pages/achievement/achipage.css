@@ -40,6 +40,11 @@
     transition: 0.15s ease;
 }
 
+.achiWrap:hover .click-text,
+.achiWrap:focus .click-text {
+    opacity: 65%;
+}
+
 .achiWrap.active .arrow {
     transform: rotate(45deg) translate(-5px, -5px);
 }
@@ -53,7 +58,7 @@
 }
 
 .achiWrap.active ul {
-    opacity: 0.3;
+    opacity: 60%;
     height: 108px;
 }
 
@@ -108,7 +113,8 @@
     float: right;
 }
 
-.arrow:before, .arrow:after {
+.arrow:before, 
+.arrow:after {
     position: absolute;
     content: "";
     display: inline-block;
@@ -137,8 +143,7 @@
 }
 
 .click-text:hover {
-    color: black;
-    border-bottom-color: black;
+    cursor: pointer;
 }
 
 .achievement ul {
@@ -173,6 +178,7 @@
     color: blue;
 }
 
-.achievement li.achiLink:hover {
+.achievement li.achiLink:hover,
+.achievement li.achiLink:focus {
     color: cornflowerblue;
 }
