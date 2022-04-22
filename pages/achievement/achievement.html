@@ -46,7 +46,7 @@
   </head>
   <body>
     <header class="header" id="header">
-      <h1 class="logo"><a href="/">Poverty HK</a></h1>
+      <h1 class="logo" tabindex="0"><a href="/" tabindex="-1">Poverty HK</a></h1>
       <ul class="main-nav">
         <li><a href="../about/about.html">About</a></li>
         <li><a href="../issue/issues.html">The Issue</a></li>
@@ -74,49 +74,49 @@
     <hr class="block-content" />
 
     <div class="achievement">
-      <div class="achiWrap achiWrap3" onclick="dropdown(this)">
+      <div class="achiWrap achiWrap3" tabindex="0">
         <p class="click-text">
           Achievement #1 <span class="arrow"></span>
         </p>
         <ul>
           <li style="cursor: auto;">Text About Achievement...</li>
-          <li onclick="location.href = 'achievements/achievement1.html';" class="achiLink">More Information...</li>
+          <li name="achievement1" class="achiLink" tabindex="-1">More Information...</li>
         </ul>  
       </div>
-      <div class="achiWrap achiWrap3" onclick="dropdown(this)">
+      <div class="achiWrap achiWrap3" tabindex="0">
         <p class="click-text">
           Achievement #2 <span class="arrow"></span>
         </p>
         <ul>
           <li style="cursor: auto;">Text About Achievement...</li>
-          <li onclick="location.href = 'achievements/achievement2.html';" class="achiLink">More Information...</li>
+          <li name="achievement2" class="achiLink" tabindex="-1">More Information...</li>
         </ul>   
       </div>
-      <div class="achiWrap achiWrap3" onclick="dropdown(this)">
+      <div class="achiWrap achiWrap3" tabindex="0">
         <p class="click-text">
           Achievement #3 <span class="arrow"></span>
         </p>
         <ul>
           <li style="cursor: auto;">Text About Achievement...</li>
-          <li onclick="location.href = 'achievements/achievement3.html';" class="achiLink">More Information...</li>
+          <li name="achievement3" class="achiLink" tabindex="-1">More Information...</li>
         </ul>   
       </div>
-      <div class="achiWrap achiWrap3" onclick="dropdown(this)">
+      <div class="achiWrap achiWrap3" tabindex="0">
         <p class="click-text">
           Achievement #4 <span class="arrow"></span>
         </p>
         <ul>
           <li style="cursor: auto;">Text About Achievement...</li>
-          <li onclick="location.href = 'achievements/achievement4.html';" class="achiLink">More Information...</li>
+          <li name="achievement4" class="achiLink" tabindex="-1">More Information...</li>
         </ul>   
       </div>
-      <div class="achiWrap achiWrap3" onclick="dropdown(this)">
+      <div class="achiWrap achiWrap3" tabindex="0">
         <p class="click-text">
           Achievement #5 <span class="arrow"></span>
         </p>
         <ul>
           <li style="cursor: auto;">Text About Achievement...</li>
-          <li onclick="location.href = 'achievements/achievement5.html';" class="achiLink">More Information...</li>
+          <li name="achievement5" class="achiLink" tabindex="-1">More Information...</li>
         </ul>   
       </div>
     </div>
@@ -137,21 +137,25 @@
         </div>
         <div class="footer-content-lower">
           <div class="social-links">
-            <a href="/">
-              <span class="fa fa-instagram socialLogo"> </span>
-            </a>
-            <a href="https://medium.com/@hkpoverty" target="_blank">
-              <span class="fa-brands fa-medium socialLogo"> </span>
-            </a>
-            <a href="https://github.com/PovertyHK" target="_blank">
-              <span class="fa fa-github socialLogo"> </span>
+            <a href="/" target="_blank" tabindex="-1">
+              <span class="fa fa-instagram socialLogo" tabindex="0">
+              </span>
             </a> 
-            <a href="https://twitter.com/PovertyHK" target="_blank">
-              <span class="fa fa-twitter socialLogo">
+            <a href="https://medium.com/@hkpoverty" target="_blank" tabindex="-1">
+              <span class="fa-brands fa-medium socialLogo" tabindex="0"> 
+              </span>
+            </a> 
+            <a href="https://github.com/PovertyHK" target="_blank" tabindex="-1">
+              <span class="fa fa-github socialLogo" tabindex="0">
+              </span>
+            </a> 
+            <a href="https://twitter.com/PovertyHK" target="_blank" tabindex="-1">
+              <span class="fa fa-twitter socialLogo" tabindex="0">
               </span>
             </a>
           </div>
         </div>
+        </p>
       </div>
       <div class="footer2">
         <h2>Get In Touch</h2>
@@ -166,7 +170,10 @@
         </p>
         
         <span class="subhead-dates">Email</span>
-        <p class="paragraph-text-small">hkpoverty@gmail.com</p>
+        <p class="paragraph-text-small">
+          <a href="mailto:hkpoverty@gmail.com">
+            hkpoverty@gmail.com</a>
+        </p>
       </div>
     </footer>
 

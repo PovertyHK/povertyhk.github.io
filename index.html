@@ -37,7 +37,7 @@
   </head>
   <body class="index">
     <header class="header indexHeader" id="header">
-      <h1 class="logo indexLogo" id="indexLogo"><a href="/">Poverty HK</a></h1>
+      <h1 class="logo indexLogo" id="indexLogo" tabindex="0"><a href="/" tabindex="-1">Poverty HK</a></h1>
       <ul class="main-nav indexNav" id="indexNav">
         <li><a href="pages/about/about.html">About</a></li>
         <li><a href="pages/issue/issues.html">The Issue</a></li>
@@ -160,19 +160,20 @@
         </div>
         <div class="footer-content-lower">
           <div class="social-links">
-            <a href="/">
-              <span class="fa fa-instagram socialLogo">
+            <a href="/" target="_blank" tabindex="-1">
+              <span class="fa fa-instagram socialLogo" tabindex="0">
               </span>
             </a> 
-            <a href="https://medium.com/@hkpoverty" target="_blank">
-              <span class="fa-brands fa-medium socialLogo"> </span>
-            </a> 
-            <a href="https://github.com/PovertyHK" target="_blank">
-              <span class="fa fa-github socialLogo">
+            <a href="https://medium.com/@hkpoverty" target="_blank" tabindex="-1">
+              <span class="fa-brands fa-medium socialLogo" tabindex="0"> 
               </span>
             </a> 
-            <a href="https://twitter.com/PovertyHK" target="_blank">
-              <span class="fa fa-twitter socialLogo">
+            <a href="https://github.com/PovertyHK" target="_blank" tabindex="-1">
+              <span class="fa fa-github socialLogo" tabindex="0">
+              </span>
+            </a> 
+            <a href="https://twitter.com/PovertyHK" target="_blank" tabindex="-1">
+              <span class="fa fa-twitter socialLogo" tabindex="0">
               </span>
             </a>
           </div>
@@ -187,8 +188,11 @@
             <br>Kowloon, Hong Kong</a>
         </p>
         
-        <span class="subhead-dates">Email</span>
-        <p class="paragraph-text-small">hkpoverty@gmail.com</p>
+        <span class="subhead-dates">Email</span> <!--mailto:hkpoverty@gmail.com-->
+        <p class="paragraph-text-small">
+          <a href="mailto:hkpoverty@gmail.com">
+            hkpoverty@gmail.com</a>
+        </p>
       </div>
     </footer>
 

@@ -1,6 +1,11 @@
 * {
 	box-sizing: border-box;
 }
+
+/* *:focus {
+  outline: none;
+} */
+
 body {
 	font-family: 'Nunito';
 	line-height: 1.6;
@@ -54,9 +59,15 @@ li.current:after {
 	font-size: 1.45em;
 }
 
+.logo:hover,
+.logo:focus {
+  opacity: 70%;
+}
+
 .main-nav {
 	margin-top: 5px;
 }
+
 .logo a,
 .main-nav a {
 	padding: 10px 15px;
@@ -70,7 +81,9 @@ li.current:after {
 	font-size: .99em;
 }
 
-.main-nav li:hover:after {
+.main-nav li:hover::after,
+.main-nav li:focus::after,
+.main-nav li:focus-within::after {
   width: 100%;
   background: #34495e;
 }
@@ -248,8 +261,11 @@ li.current:after {
   transition: all 0.3s ease-in-out;
 }
 
-.socialLogo:hover {
-  opacity: 50%;
+.socialLogo:hover,
+.socialLogo:focus,
+.socialLogo:focus-within,
+.socialLogo:target {
+  opacity: 50% !important;
 }
 
 .footer-links {
@@ -309,7 +325,9 @@ li.current:after {
   margin-bottom: 3px;
 }
 
-.footer-content li:hover:after {
+.footer-content li:hover::after,
+.footer-content li:focus::after,
+.footer-content li:focus-within::after {
   width: 100%;
   background: #34495e;
 }
@@ -379,6 +397,15 @@ footer.footer2 {
   letter-spacing: 0;
   line-height: 35px;
   margin-bottom: 31px;
+}
+
+.paragraph-text-small a:hover {
+  cursor: pointer !important;
+}
+
+.paragraph-text-small a:hover,
+.paragraph-text-small a:focus {
+  opacity: 80%;
 }
 
 @media (max-width: 755px) {
@@ -455,7 +482,8 @@ footer.footer2 {
   writing-mode: horizontal-tb;
 }
 
-.cookie-consent button:hover {
+.cookie-consent button:hover,
+.cookie-consent button:focus {
   background-color: #919191;
   border-color: #919191;
   color: #ffffff;

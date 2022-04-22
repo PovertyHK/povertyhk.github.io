@@ -68,26 +68,20 @@
     padding: 10px;
     border-radius: 5px;
     font-family: 'Nunito';
+    transition: opacity 500ms;
 }
 
-.contSubmit:hover {
+.contSubmit:hover,
+.contSubmit:focus {
     cursor: pointer;
     opacity: 70%;
 }
 
-::-webkit-input-placeholder {
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
     font-style: italic;
-}
-
-:-moz-placeholder {
-    font-style: italic;  
-}
-
-::-moz-placeholder {
-    font-style: italic;  
-}
-:-ms-input-placeholder {  
-    font-style: italic; 
 }
 
 @media (max-width: 620px) {
