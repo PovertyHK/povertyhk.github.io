@@ -6,6 +6,11 @@
   outline: none;
 }
 
+*::selection {
+  background-color: #dadbdf;
+  color: #000;
+}
+
 body {
 	font-family: 'Nunito';
 	line-height: 1.6;
