@@ -173,7 +173,7 @@ li.current:after {
 
 /* FOOTER */
 .footer {
-  height: 595px;
+  height: fit-content;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -181,6 +181,7 @@ li.current:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .footer .footer1 {
