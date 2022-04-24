@@ -158,6 +158,8 @@ li.current:after {
   margin: 0;
   border-width: 0px;
   opacity: 0%;
+  display: inline-block;
+  position:relative;
 }
 
 /* FOOTER */
