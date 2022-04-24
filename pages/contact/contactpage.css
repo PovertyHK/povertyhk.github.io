@@ -1,3 +1,9 @@
+input,
+textarea {
+    z-index: 1;
+    position: relative;
+}
+
 .header {
     z-index: 1;
 }
@@ -25,7 +31,12 @@
     display: inline-block;
     background-color: white;
     text-align: center;
-    justify-content: center
+    justify-content: center;
+    font-size: 13.3333px;
+}
+
+.contactForm {
+    position: relative;
 }
 
 .contactSection {
@@ -39,6 +50,9 @@
     border: 0px;
     border-bottom: 1px solid gray;
     outline: none;
+    user-select: all;
+    -webkit-user-select: all;
+    pointer-events: all;
 }
 
 .contField {
@@ -77,11 +91,34 @@
     opacity: 70%;
 }
 
-::-webkit-input-placeholder,
-:-moz-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder {
-    font-style: italic;
+::-webkit-input-placeholder  {
+    font-style: italic !important;
+    font-size: 13.3333px !important;
+}
+
+:-moz-placeholder  {
+    font-style: italic !important;
+    font-size: 13.3333px !important;
+}
+
+::-moz-placeholder  {
+    font-style: italic !important;
+    font-size: 13.3333px !important;
+}
+
+:-ms-input-placeholder  {
+    font-style: italic !important;
+    font-size: 13.3333px !important;
+}
+
+::-ms-input-placeholder  {
+    font-style: italic !important;
+    font-size: 13.3333px !important;
+}
+
+::placeholder {
+    font-style: italic !important;
+    font-size: 13.3333px !important;
 }
 
 @media (max-width: 620px) {
