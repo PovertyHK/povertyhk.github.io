@@ -11,11 +11,18 @@
   color: #000;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
 	font-family: 'Nunito';
 	line-height: 1.6;
 	margin: 0;
-	min-height: 100vh;
+	/* min-height: 100vh; */
+  overflow-y: scroll;
 }
 
 ul {
@@ -152,9 +159,7 @@ li.current:after {
 
 .block-content {
   width:100%;
-  height:0px;
-  color:black;
-  background-color:black;
+  height:1px;
   margin: 0;
   border-width: 0px;
   opacity: 0%;
@@ -236,7 +241,6 @@ li.current:after {
   width: 0;
   background: transparent;
   cursor: auto;
-  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
   display: none;
 }
 
@@ -325,6 +329,7 @@ li.current:after {
 .footer-content li {
   display: list-item;
   text-align: -webkit-match-parent;
+  text-align: match-parent;
   unicode-bidi: isolate;
   font-variant-numeric: tabular-nums;
   white-space: pre;
