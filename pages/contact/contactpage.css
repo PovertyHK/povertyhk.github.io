@@ -1,7 +1,12 @@
+section,
+div {
+    position: static;
+    font-size: 13.3333px;
+}
+
 input,
 textarea {
-    z-index: 1;
-    position: relative;
+    font-size: 13.3333px;
 }
 
 .header {
