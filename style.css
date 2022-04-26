@@ -518,3 +518,8 @@ footer.footer2 {
   border-color: #919191;
   color: #ffffff;
 }
+
+/* Extra */
+.backgroundImage {
+  height: 45vh !important;
+}
