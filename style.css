@@ -347,7 +347,7 @@ li.current:after {
   text-align: match-parent;
   unicode-bidi: isolate;
   font-variant-numeric: tabular-nums;
-  white-space: pre;
+  /* white-space: pre; */
   text-transform: none;
 }
 
