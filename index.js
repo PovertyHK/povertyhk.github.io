@@ -16,7 +16,7 @@ function setScreen () {
   if (document.documentElement.clientWidth > 1025) {
     blocker.style.display = 'none';
     var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-    let scroll = 180;
+    let scroll = 108;
     if (scrollTop >= scroll) {
       navBar.classList.remove("indexNav");
       navHeader.classList.remove("indexHeader");
