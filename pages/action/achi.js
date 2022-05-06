@@ -29,7 +29,7 @@ var dropdownLinks = document.getElementsByClassName('achiLink');
 for(let i=0; i < dropdownLinks.length; i++) {
     events.forEach( function (evt) {
         dropdownLinks[i].addEventListener(evt, function() {
-            window.location = 'achievements/'+dropdownLinks[i].getAttribute('name')+'.html';
+            window.location = dropdownLinks[i].dataset.folder+'/'+dropdownLinks[i].getAttribute('name')+'.html';
         }, false);
     });
 }
