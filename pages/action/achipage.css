@@ -20,6 +20,33 @@ section {
     z-index: 1;
 }
 
+.actionIntro {
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+}
+
+.actionIntro h1,p {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.actionIntro h1 {
+    font-size: 50px;
+}
+
+.act-intro h1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.act-intro p {
+    text-align: center;
+    font-style: italic;
+}
+
 .achi-intro h1 {
     text-align: center;
     font-size: 45px;
@@ -29,6 +56,12 @@ section {
 .achi-intro p {
     text-align: center;
     font-style: italic;
+}
+
+.takeaction {
+    width: 95%;
+    margin: 0 auto;
+    z-index: -1;
 }
 
 .achievement {
@@ -151,6 +184,43 @@ section {
     cursor: pointer;
 }
 
+.takeaction ul {
+    padding: 0;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.4s ease;
+    border-bottom: 1px solid black;
+}
+
+.takeaction li {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 4px 12px;
+    text-align: left;
+    cursor: pointer;
+    width: auto;
+    z-index: -1;
+}
+
+.takeaction li:first-child {
+    margin-top: 12px;
+}
+
+.takeaction li:last-child {
+    margin-bottom: 12px;
+}
+
+.takeaction li.achiLink {
+    color: blue;
+}
+
+.takeaction li.achiLink:hover,
+.takeaction li.achiLink:focus {
+    color: cornflowerblue;
+}
+
 .achievement ul {
     padding: 0;
     margin: 0;
@@ -186,4 +256,10 @@ section {
 .achievement li.achiLink:hover,
 .achievement li.achiLink:focus {
     color: cornflowerblue;
+}
+
+.act-block {
+    visibility: hidden;
+    width: 100%;
+    height: 46px;
 }

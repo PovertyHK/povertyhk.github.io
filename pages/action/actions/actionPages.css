@@ -1,0 +1,29 @@
+.achi-title {
+    text-align: center;
+}
+
+.achi-summary {
+    font-style: italic;
+}
+
+.achi-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.achiSecTitle {
+    padding: 0px;
+}
+
+.achiSection {
+    padding: 0px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.achiImage {
+    background-image: url('https://pocket-syndicated-images.s3.amazonaws.com/5f04a2b0bd1dc.jpg');
+    width: 100%;
+    height: 500px;
+    border-radius: 3px;
+}
