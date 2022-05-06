@@ -20,6 +20,8 @@
   padding-right: 20%;
   padding-top: 3%;
   float: left;
+  box-sizing: border-box;
+  width: 50%;
 }
 
 .issue-col2 img {
@@ -34,6 +36,8 @@
   padding-right: 20%;
   padding-top: 3%;
   float: left;
+  box-sizing: border-box;
+  width: 50%;
 }
 
 @media (max-width: 755px) {
