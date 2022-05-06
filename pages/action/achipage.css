@@ -257,3 +257,9 @@ section {
 .achievement li.achiLink:focus {
     color: cornflowerblue;
 }
+
+.act-block {
+    visibility: hidden;
+    width: 100%;
+    height: 46px;
+}
