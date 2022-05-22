@@ -523,3 +523,9 @@ footer.footer2 {
 .backgroundImage {
   height: 45vh !important;
 }
+
+.graySection {
+  background-color: #e6e6e6 !important;
+  height: fit-content;
+  display: block;
+}
