@@ -7,7 +7,7 @@
 }
 
 *::selection {
-  background-color: #dadbdf;
+  background-color: rgba(218, 219, 223,.65);
   color: #000;
 }
 
@@ -146,6 +146,7 @@ li.current:after {
   height: 8px;
   background: #cccccc;
   position: fixed;
+  z-index: 10;
 }
 
 .progress-bar {
@@ -528,4 +529,14 @@ footer.footer2 {
   background-color: #e6e6e6 !important;
   height: fit-content;
   display: block;
+}
+
+.graySection > section > div > div {
+  background-color: inherit;
+  height: 100%;
+  position: relative;
+}
+
+.graySection > section > div > img {
+  position: relative;
 }
