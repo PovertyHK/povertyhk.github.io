@@ -87,13 +87,12 @@ textarea {
     padding: 10px;
     border-radius: 5px;
     font-family: 'Nunito';
-    transition: opacity 500ms;
+    transition: background-color 300ms ease-in-out;
 }
 
 .contSubmit:hover,
 .contSubmit:focus {
     cursor: pointer;
-    opacity: 70%;
 }
 
 ::-webkit-input-placeholder  {
