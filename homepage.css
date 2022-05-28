@@ -86,6 +86,13 @@
   border: 2px solid #FFFFFF;
 }
 
+.home-content > section > div > div{
+  word-wrap: normal;
+  word-break: normal;
+  line-break: auto;
+  width: 50%;
+}
+
 .home-column1 img {
   width: 50%;
   height: 50%;
