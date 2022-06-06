@@ -13,7 +13,6 @@
 
 .indexHeader {
   background-color: transparent;
-  border: transparent;
   color: white;
   transition: background-color 0.5s,
     border 0.5s,
